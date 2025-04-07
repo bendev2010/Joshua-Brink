@@ -1,17 +1,26 @@
 main {
-    height: 60vh;
+
+    background-color: var(--ash-gray);
+}
+
+h1 {
+    color: var(--burnt-orange);
+    text-align: center;
+    margin-top: 20px;
 }
 
 main section {
-    position: relative;
-    border-bottom: solid 5px white;
+    height: 80vh;
+    border: solid 5px white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+    padding: 3rem;
 }
 
 main section div {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    display: none;
+    height: 100%;
+    border: solid 1px white;
 }
