@@ -6,14 +6,22 @@
     --ash-gray: #3F3F3F;
 }
 
-.title {
-    width: 100%;
-    height: 40vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1vh;
+main {
+    font-family: sans-serif;
     background: var(--charcoal-main);
+}
+
+section {
+    width: 100%;
+    display: grid;
     text-align: center;
+}
+
+.title {
+    height: 40vh;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1vh;
 }
 
 .title img {
@@ -27,4 +35,24 @@
 
 .title-text {
     
+}
+
+.cards {
+    height: 60vh;
+    border-top: solid 1px var(--clay-taupe);
+}
+
+.cardgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vh;
+    margin: 0 auto;
+    margin: 1rem;
+}
+
+.cardgrid div {
+    border-radius: 10px;
+    margin: 5vh;
+    transition: transform 0.3s;
 }
